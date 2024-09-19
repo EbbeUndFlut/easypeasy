@@ -1,0 +1,13 @@
+services:
+  meinedb:
+    image: postgres
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_USER=user
+      - POSTGRES_DB=sicherheit
+  adminer:
+    image: adminer
+    ports:
+      - 7070:8080
